@@ -34,51 +34,56 @@ body {
     list-style: none;
     font-weight: bold; }
   body header {
-    padding: 15px 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    body header .header-logo {
-      background: url(../images/logo.svg) no-repeat;
-      width: 30px;
-      height: 30px; }
-      body header .header-logo a {
-        padding: 15px; }
-    body header .header-nav {
+    padding: 15px 25px; }
+    body header .header-wrapper {
+      max-width: 1090px;
+      margin: 0 auto;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
-              justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      body header .header-nav .header-ul {
+              justify-content: space-between; }
+      body header .header-wrapper .header-logo {
+        background: url(../images/logo.svg) no-repeat;
+        width: 30px;
+        height: 30px; }
+        body header .header-wrapper .header-logo a {
+          padding: 15px; }
+      body header .header-wrapper .header-nav {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        margin: 0;
-        margin-right: 30px; }
-        body header .header-nav .header-ul li:not(:last-child) {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        body header .header-wrapper .header-nav .header-ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          margin: 0;
           margin-right: 30px; }
-      body header .header-nav .header-profile {
-        background: url(../images/profile-photo.svg) no-repeat;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%; }
-        body header .header-nav .header-profile a {
-          padding: 15px; }
+          body header .header-wrapper .header-nav .header-ul li:not(:last-child) {
+            margin-right: 30px; }
+        body header .header-wrapper .header-nav .header-profile {
+          background: url(../images/profile-photo.svg) no-repeat;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%; }
+          body header .header-wrapper .header-nav .header-profile a {
+            padding: 15px; }
   body main .main-photo {
-    max-height: 464px; }
+    max-height: 464px;
+    text-align: center; }
     body main .main-photo img {
-      width: 100%; }
+      max-width: 100%;
+      max-height: 464px; }
   body main .main-wrapper {
     max-width: 900px;
     margin: 40px auto 75px;
