@@ -15,15 +15,17 @@
 </head>
 <body>
   <header>
-    <div class="header-logo"><a href="#"></a></div>
-    <nav class="header-nav">
-      <ul class="header-ul">
-        <li><a href="#">Become a host</a></li>
-        <li><a href="#">Trips</a></li>
-        <li><a href="#">Messages</a></li>
-      </ul>
-      <div class="header-profile"><a href="#"></a></div>
-    </nav>
+    <section class="header-wrapper">
+      <div class="header-logo"><a href="#"></a></div>
+      <nav class="header-nav">
+        <ul class="header-ul">
+          <li><a href="#">Become a host</a></li>
+          <li><a href="#">Trips</a></li>
+          <li><a href="#">Messages</a></li>
+        </ul>
+        <div class="header-profile"><a href="#"></a></div>
+      </nav>
+    </section>
   </header>
 
   <main>
@@ -91,7 +93,7 @@
         <div class="price"><span class="price">25</span>$ per night</div>
         <form action="">
           <input type="text" id="datepicker" name="date" placeholder="Date">
-          <input type="number" name="guests" placeholder="Guests">
+          <input type="number" name="guests" min="1" placeholder="Guests">
           <input type="submit" value="Book">
         </form>
       </section>
