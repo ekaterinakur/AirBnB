@@ -14,4 +14,71 @@ h1 {
   font-weight: normal;
   font-style: normal; }
 
+header {
+  padding: 15px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  header .header-logo {
+    background: url(../images/logo.svg) no-repeat;
+    width: 30px;
+    height: 30px; }
+    header .header-logo a {
+      padding: 15px; }
+  header .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    header .header-nav .header-ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin: 0;
+      margin-right: 30px; }
+      header .header-nav .header-ul li:not(:last-child) {
+        margin-right: 30px; }
+    header .header-nav .header-profile {
+      background: url(../images/profile-photo.svg) no-repeat;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%; }
+      header .header-nav .header-profile a {
+        padding: 15px; }
+
+footer {
+  padding: 45px 25px;
+  -webkit-box-shadow: 0 -1px 0 #e1e7ed;
+          box-shadow: 0 -1px 0 #e1e7ed; }
+  footer .footer-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; }
+    footer .footer-wrapper .footer-links {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      footer .footer-wrapper .footer-links .links-themes {
+        font-weight: bold;
+        margin-bottom: 20px; }
+      footer .footer-wrapper .footer-links a:not(:last-child) {
+        margin-bottom: 10px; }
+
 /*# sourceMappingURL=main.css.map */
