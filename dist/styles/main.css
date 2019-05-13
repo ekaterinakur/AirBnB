@@ -36,7 +36,7 @@ body {
   body header {
     padding: 15px 25px; }
     body header .header-wrapper {
-      max-width: 1090px;
+      max-width: 1950px;
       margin: 0 auto;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -80,10 +80,10 @@ body {
             padding: 15px; }
   body main .main-photo {
     max-height: 464px;
-    text-align: center; }
+    text-align: center;
+    overflow: hidden; }
     body main .main-photo img {
-      max-width: 100%;
-      max-height: 464px; }
+      width: 100%; }
   body main .main-wrapper {
     max-width: 900px;
     margin: 40px auto 75px;
@@ -160,6 +160,9 @@ body {
         color: #118488;
         display: inline-block;
         margin-top: 20px; }
+        body main .main-wrapper .about-apartment .hosted-info .contact-host:hover {
+          color: #fff;
+          background: #118488; }
     body main .main-wrapper .registration-form {
       width: 330px;
       height: 320px;
