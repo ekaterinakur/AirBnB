@@ -13,6 +13,38 @@
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+            user-scalable=no,
+            initial-scale=1.0,
+            maximum-scale=1.0,
+            minimum-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>AirBnB</title>
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+          <section class="registration-form">
+          <div class="price"><span class="price">25</span>$ per night</div>
+          <form action="">
+            <input type="text" id="datepicker" name="date" placeholder="Date">
+            <input type="number" name="guests" placeholder="Guests">
+            <input type="submit" value="Book">
+          </form>
+        </section>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+    </script>
+  </body>
+  </html>
 </body>
 </html>
