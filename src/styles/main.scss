@@ -22,6 +22,10 @@ body {
   a {
     text-decoration: none;
     color: #3d4e61;
+
+    &:hover {
+      color: #000;
+    }
   }
 
   li {
@@ -151,6 +155,10 @@ body {
               color: #3d4e61;
               outline: none;
               cursor: pointer;
+
+              &:hover {
+                color: #000;
+              }
             }
           }
         }
@@ -243,6 +251,10 @@ body {
             border-radius: 4px;
             color: #fff;
             cursor: pointer;
+
+            &:hover {
+              font-weight: bold;
+            }
           }
         }
       }
