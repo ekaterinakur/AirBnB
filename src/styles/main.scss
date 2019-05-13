@@ -24,6 +24,55 @@ body {
     color: #3d4e61;
   }
 
+  li {
+    list-style: none;
+    font-weight: bold;
+  }
+
+  header {
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+
+    .header-logo {
+      background: url(../images/logo.svg) no-repeat;
+      width: 30px;
+      height: 30px;
+
+      a {
+        padding: 15px;
+      }
+    }
+
+    .header-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .header-ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        margin-right: 30px;
+
+        li:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+
+      .header-profile {
+        background: url(../images/profile-photo.svg) no-repeat;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+
+        a {
+          padding: 15px;
+        }
+      }
+    }
+  }
+
   main {
 
     .main-photo {
@@ -183,6 +232,45 @@ body {
             color: #fff;
             cursor: pointer;
           }
+        }
+      }
+
+      @media (max-width: 784px) {
+        display: block;
+
+        .about-apartment {
+          margin: 0 auto;
+        }
+
+        .registration-form {
+          margin: 40px auto 0;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 45px 25px;
+    box-shadow: 0 -1px 0 #e1e7ed;
+
+    .footer-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+
+        .links-themes {
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+
+        a:not(:last-child) {
+          margin-bottom: 10px;
         }
       }
     }
