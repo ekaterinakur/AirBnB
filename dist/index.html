@@ -13,6 +13,20 @@
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-
+  <section class="registration-form">
+    <div class="price"><span class="price">25</span>$ per night</div>
+    <form action="">
+      <input type="text" id="datepicker" name="date" placeholder="Date">
+      <input type="number" name="guests" placeholder="Guests">
+      <input type="submit" value="Book">
+    </form>
+  </section>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+  $( "#datepicker" ).datepicker();
+} );
+</script>
 </body>
 </html>
