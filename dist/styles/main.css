@@ -52,7 +52,7 @@ body {
         height: 30px; }
         body header .header-wrapper .header-logo a {
           padding: 15px; }
-      body header .header-wrapper .header-nav {
+      body header .header-wrapper .header-right {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -62,23 +62,24 @@ body {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-        body header .header-wrapper .header-nav .header-ul {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between;
-          margin: 0;
+        body header .header-wrapper .header-right .header-nav {
           margin-right: 30px; }
-          body header .header-wrapper .header-nav .header-ul li:not(:last-child) {
-            margin-right: 30px; }
-        body header .header-wrapper .header-nav .header-profile {
+          body header .header-wrapper .header-right .header-nav .header-ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            margin: 0; }
+            body header .header-wrapper .header-right .header-nav .header-ul li:not(:last-child) {
+              margin-right: 30px; }
+        body header .header-wrapper .header-right .header-profile {
           background: url(../images/profile-photo.svg) no-repeat;
           width: 30px;
           height: 30px;
           border-radius: 50%; }
-          body header .header-wrapper .header-nav .header-profile a {
+          body header .header-wrapper .header-right .header-profile a {
             padding: 15px; }
   body main .main-photo {
     max-height: 464px;
@@ -138,16 +139,19 @@ body {
         body main .main-wrapper .about-apartment .reviews .review {
           margin-top: 34px; }
           body main .main-wrapper .about-apartment .reviews .review .review-from {
-            margin-bottom: 14px; }
+            margin-bottom: 14px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
             body main .main-wrapper .about-apartment .reviews .review .review-from .review-profile {
               background: #c4c4c4;
               width: 50px;
               height: 50px;
               border-radius: 50%;
-              margin-right: 20px;
-              float: left; }
+              margin-right: 20px; }
               body main .main-wrapper .about-apartment .reviews .review .review-from .review-profile .review-profile-link {
-                padding: 25px; }
+                padding: 25px;
+                font-size: 0; }
             body main .main-wrapper .about-apartment .reviews .review .review-from .review-author {
               font-size: 20px;
               margin-bottom: 4px; }
@@ -174,7 +178,10 @@ body {
               box-sizing: border-box;
       border: 1px solid #e1e7ed;
       border-radius: 3px;
-      padding: 30px 30px 0; }
+      padding: 30px 30px 0;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 20px; }
       body main .main-wrapper .registration-form form {
         margin-top: 40px; }
         body main .main-wrapper .registration-form form input {
@@ -203,7 +210,8 @@ body {
         body main .main-wrapper .about-apartment {
           margin: 0 auto; }
         body main .main-wrapper .registration-form {
-          margin: 40px auto 0; } }
+          margin: 40px auto 0;
+          position: static; } }
   body footer {
     padding: 45px 25px;
     -webkit-box-shadow: 0 -1px 0 #e1e7ed;
